@@ -5,6 +5,7 @@ Indents print statements based on how deep you are in the call stack. Useful for
 
 Example:
 
+```python
 from printdent import pprint
 
 def three():
@@ -21,12 +22,15 @@ def one():
 
 pprint("inside main")
 one()
+```
 
 Output:
 
+```
 $ python example.py
 inside main
   inside one
     inside two
       inside three
   back inside one
+```
